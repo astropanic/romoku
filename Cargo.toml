@@ -1,0 +1,7 @@
+[workspace]
+resolver = "3"
+members = ["crates/romoku-core", "crates/romoku-tui", "crates/romoku-web"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"

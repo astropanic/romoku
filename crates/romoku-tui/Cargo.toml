@@ -1,0 +1,12 @@
+[package]
+name = "romoku-tui"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "romoku"
+path = "src/main.rs"
+
+[dependencies]
+romoku-core = { path = "../romoku-core" }
+ratatui = "0.30.2"

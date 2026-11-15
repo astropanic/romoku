@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>romoku</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>romoku</h1>
+    <div id="status" aria-live="polite">Loading…</div>
+    <div class="controls">
+      <label class="visually-hidden" for="mode">Mode</label>
+      <select id="mode"></select>
+      <button id="new-game" type="button">New game</button>
+    </div>
+  </header>
+  <canvas id="board" tabindex="0" aria-label="Game board"></canvas>
+  <footer>
+    Click to place · drag to pan · scroll or pinch to zoom ·
+    <kbd>←↑↓→</kbd>/<kbd>hjkl</kbd> + <kbd>Enter</kbd> · <kbd>C</kbd> center ·
+    <kbd>N</kbd> new · <kbd>M</kbd> mode
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
